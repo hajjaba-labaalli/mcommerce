@@ -106,14 +106,14 @@ public class ClientController {
         // On appel le microservice et (étape 7) on récupère le résultat qui est sous forme ResponseEntity<PaiementBean> ce qui va nous permettre de vérifier le code retour.
         ResponseEntity<PaiementBean> paiement = paiementProxy.payerUneCommande(paiementAExcecuter);
 
-        Boolean paiementAccepte = false;
+        boolean paiementAccepte = false;
         //si le code est autre que 201 CREATED, c'est que le paiement n'a pas pu aboutir.
         if(paiement.getStatusCode() == HttpStatus.CREATED)
                 paiementAccepte = true;
 
         model.addAttribute("paiementOk", paiementAccepte); // on envoi un Boolean paiementOk à la vue
 
-        return "confirmation";
+        return "Confirmation";
     }
 
     //Génére une serie de 16 chiffres au hasard pour simuler vaguement une CB
