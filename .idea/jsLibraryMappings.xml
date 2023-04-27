@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{bootstrap}" />
+    <file url="file://$PROJECT_DIR$/clientui" libraries="{bootstrap}" />
+    <file url="file://$PROJECT_DIR$/microservice-commandes" libraries="{bootstrap}" />
+    <file url="file://$PROJECT_DIR$/microservice-paiement" libraries="{bootstrap}" />
+    <file url="file://$PROJECT_DIR$/microservice-produits" libraries="{bootstrap}" />
+  </component>
+</project>
